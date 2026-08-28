@@ -14,8 +14,8 @@ uv run python manage.py startapp APP-NAME
 uv run python manage.py runserver
 ```
 
-## To Deploy it:
+## To Build it:
 ```
-uv pip freeze > requirements.txt
-uv run python manage.py collectstatic
+chmod +x ./build.sh 
+./build.sh
 ```
