@@ -1,0 +1,16 @@
+{% extends "movies/_base.html" %}
+
+{% block title %}Main Page{% endblock title %}
+
+{% block content %}
+<h1>These are my favorite movies...</h1>
+{% if movies %}
+    <ul>
+        {% for movie in movies %}
+            <li>{{ movie|title }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No movies...</p>
+{% endif %}
+{% endblock content %}

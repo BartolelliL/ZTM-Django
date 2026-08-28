@@ -1,0 +1,10 @@
+{% extends "movies/_base.html" %}
+
+{% block title %}About me...{% endblock title %}
+
+{% block content %}
+<h1>My favorite movie is <span style="color: red">Avengers Endgame</span></h1>
+<h3>And this is me:</h3>
+{% load static %}
+<img src="{% static "movies/IMG.jpg" %}" alt="MyImg" style="width: 20%;">
+{% endblock content %}
