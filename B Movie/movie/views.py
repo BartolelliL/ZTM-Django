@@ -5,8 +5,8 @@ def index(request):
     context: dict = {
         "movies": [
             "gladiator",
-            "GLADIATOR",
-            "Gladiator"
+            "odessey",
+            "Johnny Stecchino"
         ],
     }
 
