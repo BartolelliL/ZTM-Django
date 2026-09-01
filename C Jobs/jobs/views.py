@@ -7,7 +7,8 @@ from .models import JobsPosting
 # Tramite le views si prendono gli oggetti del modello
 # e si filtrano. Questi ultimi vengono assegnati ad
 # una chiave nel context:dict, che viene passata come parametro
-# al modulo render
+# al modulo render. Tramite il template del render
+# si può accedere alle chiavi del context:dict
 
 def index(request):
     active_jobs = JobsPosting.objects.filter(is_active=True)
